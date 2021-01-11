@@ -15,12 +15,14 @@ float dustDensity = 0;
 // RemoteXY select connection mode and include library 
 #define REMOTEXY_MODE__SOFTSERIAL
 #include <SoftwareSerial.h>
+
 #include <RemoteXY.h>
 
 // RemoteXY connection settings 
 #define REMOTEXY_SERIAL_RX 2
 #define REMOTEXY_SERIAL_TX 3
 #define REMOTEXY_SERIAL_SPEED 9600
+
 
 // RemoteXY configurate  
 #pragma pack(push, 1)
@@ -32,7 +34,7 @@ uint8_t RemoteXY_CONF[] =
   103,101,0,129,0,1,70,24,4,17,
   68,117,115,116,32,68,101,110,115,105,
   116,121,0,129,0,2,4,18,6,79,
-  83,116,97,121,32,83,97,118,101,0,
+  83,116,97,121,32,83,97,102,101,0,
   129,0,8,16,47,9,24,65,105,114,
   32,80,117,114,105,102,105,101,114,0,
   67,4,29,47,23,7,2,26,11,67,
@@ -61,7 +63,6 @@ struct {
 /////////////////////////////////////////////
 //           END RemoteXY include          //
 /////////////////////////////////////////////
-
 #define PIN_SWITCH_1 11
 
 void setup() 
